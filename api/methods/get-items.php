@@ -6,7 +6,7 @@ function getItems($db, $request, $util)
 
     if ($request->params->table == 'albums') {
       $items = array_map(function ($item) {
-        error_log(print_r(['type' => gettype($item->photos)], true));
+        if (gettype($item->photos) != 'array') $item->photos = json_decode($item->photos);
         return $item;
       }, $items);
     }
