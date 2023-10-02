@@ -5,8 +5,10 @@ function getItems($db, $request, $util)
     $items = $db->fetchAll("SELECT * FROM %n ORDER BY %by", $request->params->table, $request->params->sortBy, $request->params->sortDir);
 
     if ($request->params->table == 'albums') {
-      $cols = $db->fetchAll("SHOW COLUMNS IN %n", $request->params->table);
-      error_log(print_r($cols, true));
+      $items = array_map(function ($item) {
+        error_log(print_r(['type' => gettype($item->photos)], true));
+        return $item;
+      }, $items);
     }
 
     $items = array_map(function ($item) {
