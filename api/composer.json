@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Castoware\\": "Castoware/"
+    }
+  },
+  "require": {
+    "altorouter/altorouter": "^2.0",
+    "dibi/dibi": "^5.0",
+    "ramsey/uuid": "^4.7",
+    "jawira/case-converter": "^3.5"
+  }
+}
