@@ -20,6 +20,7 @@ $router->addRoutes([
   ['get', '/api/get-items/[:table]/[:sortBy]/[:sortDir]', 'getItems'],
   ['get', '/api/verify-token', 'verify-token'], // placeholder, no actual function
   ['post', '/api/delete-rec', 'deleteRec'],
+  ['post', '/api/delete-recs', 'deleteRecs'],
   ['post', '/api/send-contact', 'sendContact'],
   ['post', '/api/sign-in', 'signIn'],
   ['post', '/api/update-pages', 'updatePages'],
