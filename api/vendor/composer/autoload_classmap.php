@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AltoRouter' => $vendorDir . '/altorouter/altorouter/AltoRouter.php',
+    'BaseSendGridClientInterface' => $vendorDir . '/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Dibi\\Bridges\\Nette\\DibiExtension22' => $vendorDir . '/dibi/dibi/src/Dibi/Bridges/Nette/DibiExtension22.php',
     'Dibi\\Bridges\\Tracy\\Panel' => $vendorDir . '/dibi/dibi/src/Dibi/Bridges/Tracy/Panel.php',
@@ -74,5 +75,7 @@ return array(
     'Dibi\\Translator' => $vendorDir . '/dibi/dibi/src/Dibi/Translator.php',
     'Dibi\\Type' => $vendorDir . '/dibi/dibi/src/Dibi/Type.php',
     'Dibi\\UniqueConstraintViolationException' => $vendorDir . '/dibi/dibi/src/Dibi/exceptions.php',
+    'SendGrid' => $vendorDir . '/sendgrid/sendgrid/lib/SendGrid.php',
+    'TwilioEmail' => $vendorDir . '/sendgrid/sendgrid/lib/TwilioEmail.php',
     'dibi' => $vendorDir . '/dibi/dibi/src/Dibi/dibi.php',
 );

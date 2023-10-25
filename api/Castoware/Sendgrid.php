@@ -50,7 +50,7 @@ class Sendgrid
   function sendEmail($replyTo, $replyToName, $to, $toName, $subject, $body)
   {
     $email = new \SendGrid\Mail\Mail();
-    $email->setFrom('contacts@castoware.com', 'CastoWare Development');
+    $email->setFrom('h3-contacts@castoware.com', 'H3 Cuenca Alpaca');
     $email->setReplyTo($replyTo, $replyToName);
     $email->setSubject($subject);
     $email->addTo($to, $toName);
